@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the king of dice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>King of dice</h1>
+      </header>
+      <!--main start-->
+      <main>
+        <section id="players">
+          <!-- player one start-->
+          <section class="player player_0 player_active">
+            <h2 class="name" id="name_0">King 1 total: <span id="score_0"></span></h2>
+            <div class="current">
+              <p class="current_label">Current score: <span id="current_0"></span></p>
+            </div>
+          </section>
+          <!--player one close-->
+          <div id="dice-container">
+            
+            <img src="./images/dice-1.png" alt="playing dice" class="dice hidden" />
+          </div>
+      
+          <!--second player start-->
+          <section class="player player_1">
+            <h2 class="name" id="name_1">King 2 total: <span id="score_1"></span></h2>
+            <div class="current">
+              <p class="current_label">Current score: <span id="current_1"></span></p>
+            </div>
+          </section>
+          <!--second player close-->
+        </section>
+      
+        <!--buttons and image start-->
+        <h2 id="turn">It's King 1's turn</h2>
+        <div id="controls">
+          <button class="btn btn_new">New Game</button>
+          <button class="btn btn_roll">Roll dice</button>
+          <button class="btn btn_hold">Hold</button>
+        </div>
+        <!--buttons and image close-->
+      </main>
+    </div>
+  <script defer src="script.js"></script>
+  </body>
+</html>
